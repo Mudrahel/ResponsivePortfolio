@@ -1,8 +1,17 @@
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    flex: 1; /* Allow the container to take up the remaining vertical space */
+    padding: 20px;
 }
 
 header {
@@ -38,11 +47,14 @@ ul {
     background-color: #555;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
+.footer {
     background-color: #333;
     color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0; /* Position the footer at the bottom */
+    width: 100%;
 }
 
 /* for thumbnail pictures */
